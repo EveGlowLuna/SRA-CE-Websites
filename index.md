@@ -17,7 +17,7 @@ hero:
       text: 教程文档
       link: /api-examples
   image:
-    src: /assets/SRAIcon.png
+    src: /SRAIcon.png
     alt: StarRailAssistant
 
 features:
