@@ -1,6 +1,8 @@
 ---
 # https://vitepress.dev/reference/default-theme-home-page
 layout: home
+title: StarRailAssistant Community Edition
+titleTemplate: false
 
 tk:
   teekHome: false

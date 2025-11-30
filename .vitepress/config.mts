@@ -4,11 +4,13 @@ import { defineTeekConfig } from "vitepress-theme-teek/config";
 // Teek 主题配置
 const teekConfig = defineTeekConfig({
   title: "StarRailAssistant Community Edition",
+  titleTemplate: false,
   description: "A Community Edition of StarRailAssistant",
   head: [
     ['link', { rel: 'icon', href: '/SRAIcon.png' }],
     ['meta', { property: 'og:title', content: 'StarRailAssistant Community Edition' }],
-    ['meta', { property: 'og:description', content: 'A Community Edition of StarRailAssistant' }]
+    ['meta', { property: 'og:description', content: 'A Community Edition of StarRailAssistant' }],
+    ['meta', { name: 'apple-mobile-web-app-title', content: 'SRA CE' }]
   ],
   themeConfig: {
     logo: '/SRAIcon.png',
