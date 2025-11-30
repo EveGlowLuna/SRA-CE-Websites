@@ -2,5 +2,5 @@
   command = "npm run docs:build"
   publish = ".vitepress/dist"
 
-# VitePress 是静态站点生成器，不需要任何 Runtime
-# 明确告诉 Netlify 不要使用任何插件
+[build.environment]
+  NETLIFY_NEXT_PLUGIN_SKIP = "true"
