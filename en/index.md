@@ -1,5 +1,4 @@
 ---
-# https://vitepress.dev/reference/default-theme-home-page
 layout: home
 title: StarRailAssistant Community Edition
 titleTemplate: false
@@ -10,40 +9,29 @@ tk:
 hero:
   name: "StarRailAssistant"
   text: "Community Edition"
-  tagline: 基于 Tauri + Vue 3 重构，更快、更轻、更现代
+  tagline: Rebuilt with Tauri + Vue 3, faster, lighter, and more modern
   actions:
     - theme: brand
-      text: 立即下载
-      link: /pages/download
+      text: Download Now
+      link: /en/pages/download
     - theme: alt
-      text: 教程文档
-      link: /docs/getting-started.md
+      text: Documentation
+      link: /en/docs/getting-started
   image:
     src: /SRAIcon.png
     alt: StarRailAssistant
 
 features:
-  - title: 轻量高效
+  - title: Lightweight & Efficient
     icon: ⚡
-    details:  基于 Rust + Tauri 构建，前端体积仅约 10MB，内存占用低至 50MB，且无需安装.NET Runtime，告别臃肿，享受丝滑流畅的使用体验。
-  - title: 实时反馈
+    details: Built with Rust + Tauri, frontend size only ~10MB, memory usage as low as 50MB, no .NET Runtime required. Say goodbye to bloat and enjoy a smooth experience.
+  - title: Real-time Feedback
     icon: 📊
-    details: 完整的日志系统和状态监控，任务执行情况实时显示。支持日志过滤、导出和搜索，问题排查更高效。
-  - title: 完全兼容
+    details: Complete logging system and status monitoring with real-time task execution display. Supports log filtering, export, and search for efficient troubleshooting.
+  - title: Fully Compatible
     icon: 🔄
-    details: 完整保留 SRA 核心功能，支持所有原有配置和任务类型。无缝替换原前端，无需重新学习，开箱即用。
+    details: Retains all core SRA features, supports all original configurations and task types. Seamless frontend replacement, no relearning required, ready to use out of the box.
 ---
-
-::: center
-## 与原版的区别
-左边：原版 <--> 右边：社区版
-<div style="text-align: center; margin: 20px 0;">
-    <div style="display: inline-flex; gap: 15px; max-width: 100%;">
-        <img src="/SRA-Home-O.png" alt="原版界面" style="width: 48%; height: auto;"/>
-        <img src="/SRA-Home-C.png" alt="社区版界面" style="width: 48%; height: auto;"/>
-    </div>
-</div>
-:::
 
 <script setup lang="ts">
 import { onMounted } from "vue";

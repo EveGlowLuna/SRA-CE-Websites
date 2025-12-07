@@ -3,7 +3,12 @@ import { defineTeekConfig } from "vitepress-theme-teek/config";
 
 // Teek 主题配置
 const teekConfig = defineTeekConfig({
-  // Teek 主题特定配置可以放这里
+  footerInfo: {
+    copyright: {
+      createYear: 2025,
+      suffix: "StarRailAssistant CE",
+    },
+  },
 });
 
 // https://vitepress.dev/reference/site-config
@@ -18,17 +23,47 @@ export default defineConfig({
     ['meta', { property: 'og:description', content: 'A Community Edition of StarRailAssistant' }],
     ['meta', { name: 'apple-mobile-web-app-title', content: 'SRA CE' }]
   ],
-  themeConfig: {
-    logo: '/SRAIcon.png',
-    siteTitle: 'StarRailAssistant CE',
-    nav: [
-      { text: '主页', link: '/' },
-      { text: '开始使用', link: '/docs/getting-started'},
-      { text: '下载', link: '/pages/download' }
-    ],
-    sidebar: [],
-    socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
-    ]
+  
+  // 多语言配置
+  locales: {
+    root: {
+      label: '简体中文',
+      lang: 'zh-CN',
+      themeConfig: {
+        logo: '/SRAIcon.png',
+        siteTitle: 'StarRailAssistant CE',
+        nav: [
+          { text: '主页', link: '/' },
+          { text: '开始使用', link: '/docs/开始使用'},
+          { text: '下载', link: '/pages/download' }
+        ],
+        sidebar: [
+          { text: '开始使用', link: '/docs/开始使用'},
+        ],
+        socialLinks: [
+          { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
+        ]
+      }
+    },
+    en: {
+      label: 'English',
+      lang: 'en-US',
+      link: '/en/',
+      title: "StarRailAssistant Community Edition",
+      description: "A Community Edition of StarRailAssistant",
+      themeConfig: {
+        logo: '/SRAIcon.png',
+        siteTitle: 'StarRailAssistant CE',
+        nav: [
+          { text: 'Home', link: '/en/' },
+          { text: 'Getting Started', link: '/en/docs/getting-started'},
+          { text: 'Download', link: '/en/pages/download' }
+        ],
+        sidebar: [],
+        socialLinks: [
+          { icon: 'github', link: 'https://github.com/vuejs/vitepress' }
+        ]
+      }
+    }
   }
 })
