@@ -36,6 +36,9 @@ features:
 
 ::: center
 ## 与原版的区别
+
+*人工队 vs. 机器队*
+
 左边：原版 <--> 右边：社区版
 <div style="text-align: center; margin: 20px 0;">
     <div style="display: inline-flex; gap: 15px; max-width: 100%;">
