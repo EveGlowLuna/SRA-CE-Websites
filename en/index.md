@@ -16,7 +16,7 @@ hero:
       link: /en/pages/download
     - theme: alt
       text: Documentation
-      link: /en/docs/getting-started
+      link: /en/docs/getting-started/installation
   image:
     src: /SRAIcon.png
     alt: StarRailAssistant
@@ -31,7 +31,24 @@ features:
   - title: Fully Compatible
     icon: 🔄
     details: Retains all core SRA features, supports all original configurations and task types. Seamless frontend replacement, no relearning required, ready to use out of the box.
+  - title: (Almost Complete) Full English Support
+    icon: 🌐
+    details: Except for some backend messages, the community edition supports a fully English user interface for users.
 ---
+
+::: center
+## Differences from Original Version
+
+*Human Team vs. Machine Team*
+
+Left: Original <--> Right: Community Edition
+<div style="text-align: center; margin: 20px 0;">
+    <div style="display: inline-flex; gap: 15px; max-width: 100%;">
+        <img src="/SRA-Home-O.png" alt="Original Interface" style="width: 48%; height: auto;"/>
+        <img src="/SRA-Home-C.png" alt="Community Edition Interface" style="width: 48%; height: auto;"/>
+    </div>
+</div>
+:::
 
 <script setup lang="ts">
 import { onMounted } from "vue";

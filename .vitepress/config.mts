@@ -92,12 +92,55 @@ export default defineConfig({
       title: "StarRailAssistant Community Edition",
       description: "A Community Edition of StarRailAssistant",
       themeConfig: {
+        darkModeSwitchLabel: 'Theme',
+        sidebarMenuLabel: 'Menu',
+        returnToTopLabel: 'Return to top',
+        outline: {
+          level: [2, 4],
+          label: 'On this page',
+        },
+        docFooter: {
+          prev: 'Previous page',
+          next: 'Next page',
+        },
         nav: [
           { text: 'Home', link: '/en/' },
-          { text: 'Getting Started', link: '/en/docs/getting-started' },
+          {
+            text: 'Getting Started',
+            link: '/en/docs/getting-started/installation',
+            activeMatch: '/en/docs/getting-started/',
+          },
+          {
+            text: 'Development',
+            link: '/en/docs/development/prerequisites',
+            activeMatch: '/en/docs/development/',
+          },
           { text: 'Download', link: '/en/pages/download' }
         ],
-        sidebar: {},
+        sidebar: {
+          '/en/docs/getting-started/': [
+            {
+              text: 'Getting Started',
+              items: [
+                { text: 'Installation', link: '/en/docs/getting-started/installation' },
+                { text: 'Advanced Usage', link: '/en/docs/getting-started/advanced-usage' },
+              ]
+            }
+          ],
+          '/en/docs/development/': [
+            {
+              text: 'Development',
+              items: [
+                { text: 'Prerequisites', link: '/en/docs/development/prerequisites' },
+                { text: 'Coding Standards', link: '/en/docs/development/coding-standards' },
+                { text: 'API Reference', link: '/en/docs/development/api' },
+              ]
+            }
+          ],
+        },
+        socialLinks: [
+          { icon: 'github', link: 'https://github.com/EveGlowLuna/StarRailAssistant-CommunityEdition' }
+        ]
       }
     }
   }
