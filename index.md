@@ -17,7 +17,7 @@ hero:
       link: /pages/download
     - theme: alt
       text: 教程文档
-      link: /docs/getting-started.md
+      link: /docs/快速上手/开始使用
   image:
     src: /SRAIcon.png
     alt: StarRailAssistant
